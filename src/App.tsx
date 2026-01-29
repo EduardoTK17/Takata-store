@@ -188,9 +188,9 @@ function App() {
           </div>
         </div>
 
-        {/* --- NOVO FILTRO DE CATEGORIAS (PESQUISA INTELIGENTE) --- */}
-        <div className="relative w-full max-w-md mx-auto mb-8 px-4 z-40">
-          <div className="relative">
+{/* --- NOVO FILTRO DE CATEGORIAS (PESQUISA INTELIGENTE) --- */}
+<div className="relative w-full max-w-md mx-auto mb-8 px-4 z-40">
+          <div className="relative group"> {/* Adicionei 'group' aqui para efeitos de hover */}
             <input
               type="text"
               placeholder="🔍 Filtrar por categoria..."
@@ -200,17 +200,18 @@ function App() {
                 setCategorySearch(e.target.value);
                 setIsCategoryOpen(true);
               }}
-              className="w-full pl-5 pr-10 py-3 rounded-xl border border-white/40 shadow-lg outline-none focus:ring-2 focus:ring-shopee/50 font-bold text-gray-700 bg-white/60 backdrop-blur-md transition-all placeholder-gray-500"
+              // CLASSES ATUALIZADAS PARA BORDA MAIS FORTE:
+              className="w-full pl-5 pr-10 py-3 rounded-xl border-2 border-gray-300 shadow-md outline-none focus:border-shopee focus:ring-1 focus:ring-shopee/30 hover:border-shopee font-bold text-gray-800 bg-white/90 backdrop-blur-md transition-all duration-300 placeholder-gray-400"
             />
             <ChevronDown 
-              className={`absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 transition-transform duration-300 ${isCategoryOpen ? 'rotate-180' : ''}`} 
+              className={`absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 transition-transform duration-300 group-hover:text-shopee ${isCategoryOpen ? 'rotate-180' : ''}`} 
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
             />
           </div>
 
-          {/* LISTA QUE ABRE QUANDO CLICA */}
+          {/* LISTA QUE ABRE QUANDO CLICA (Também ajustei a borda aqui para combinar) */}
           {isCategoryOpen && (
-            <div className="absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/50 max-h-60 overflow-y-auto z-50 animate-fade-in custom-scrollbar">
+            <div className="absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border-2 border-gray-100 max-h-60 overflow-y-auto z-50 animate-fade-in custom-scrollbar">
               {categories
                 .filter(cat => cat.toLowerCase().includes(categorySearch.toLowerCase()))
                 .map((cat) => (
