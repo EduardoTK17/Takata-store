@@ -633,5 +633,16 @@ export const products: Product[] = [
                         rating: 4.7,
                         sold: "80mil+"
                       },
+                      {
+                        id: 58,
+                        name: "Parafusadeira e Furadeira de Impacto com Maleta, Duas Baterias e Kit 28 Peças Bivolt 110V/220V",
+                        origin: "BR",
+                        price: "133.90",
+                        category: "Ferramentas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjnlqrkzxpty83.webp",
+                        affiliateLink: "https://s.shopee.com.br/4LDUZpPi1W",
+                        rating: 4.8,
+                        sold: "70mil+"
+                      },
                       
 ];
