@@ -764,5 +764,82 @@ export const products: Product[] = [
                         affiliateLink: "https://s.shopee.com.br/4Au4V9K8Jw",
                         rating: 4.8,
                         sold: "7mil+"
-                      },                                                                                 
+                      }, 
+                      {
+                        id: 70,
+                        name: "Suporte Para Celular e Tablet Ergonômico Dobrável E Ajustável Apoio De Mesa",
+                        origin: "BR",
+                        price: "10.00 - 23.88",
+                        category: "Acessórios de Celular",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9eie10539dl15@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/8fMTwikQYr",
+                        rating: 4.9,
+                        sold: "1mil+"
+                      },   
+                      {
+                        id: 71,
+                        name: "KIT Cabo USB De 4 Em 1 Carregador Celular USB Tipo C Disponível para iP 1 Metro 6A Preto",
+                        origin: "BR",
+                        price: "",
+                        category: "Acessórios de Celular",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyk9jpe98j6ta8@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/5fisNRCGBc",
+                        rating: 4.8,
+                        sold: "268"
+                      },   
+                      {
+                        id: 72,
+                        name: "Cabo USB-C 4 em 1, 1 m com carregamento rápido de 65W múltiplas portas compatível com iPhone 16/15/14/13/12/Pro Samsung",
+                        origin: "BR",
+                        price: "13.90",
+                        category: "Acessórios de Celular",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-821d6-mh6ik4532djge1.webp",
+                        affiliateLink: "https://s.shopee.com.br/9fF18wsr6m",
+                        rating: 4.9,
+                        sold: "71"
+                      },   
+                      {
+                        id: 73,
+                        name: "Regua Cabo Hub Usb 2.0 De 4 ou 7 Portas Rápidas Extensão Usb Pc",
+                        origin: "BR",
+                        price: "17.50",
+                        category: "Informática",
+                        image: "https://down-br.img.susercontent.com/file/br-11134211-81z1k-melzvki0hjb760.webp",
+                        affiliateLink: "https://s.shopee.com.br/6pupm6uLot",
+                        rating: 4.8,
+                        sold: "10mil+"
+                      },      
+                      {
+                        id: 74,
+                        name: "N35 Fone De Ouvido Sem Fio Bluetooth 5.0 Tws Com Cancelamento De Ruído Super Bass/Música/Jogos",
+                        origin: "BR",
+                        price: "32.99",
+                        category: "Áudio",
+                        image: "https://down-br.img.susercontent.com/file/br-11134201-23010-km7ko1rx4gmvd1.webp",
+                        affiliateLink: "https://s.shopee.com.br/3VeNo5DYP3",
+                        rating: 4.6,
+                        sold: "10mil+"
+                      },    
+                      {
+                        id: 75,
+                        name: "Watch X Smartwatch Relogio Serie 10 Amoled Nfc Chat GPT Original",
+                        origin: "BR",
+                        price: "194.79",
+                        category: "Smartwatches",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjpxbwvx3q4hcf.webp",
+                        affiliateLink: "https://s.shopee.com.br/4LDUnz5USz",
+                        rating: 4.8,
+                        sold: "10mil+"
+                      },  
+                      {
+                        id: 76,
+                        name: "Victoria's Secret Body Splash 250ml Original lmportado Realce seu charme e aproveite a fragrância",
+                        origin: "BR",
+                        price: "89.90 - 99.90",
+                        category: "Beleza e Perfumaria",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi21wbw03z0i87@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/5L62048tO6",
+                        rating: 4.4,
+                        sold: "305"
+                      },                                                           
 ];
