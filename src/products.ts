@@ -731,5 +731,38 @@ export const products: Product[] = [
                         affiliateLink: "https://s.shopee.com.br/9fF0z4yDy4",
                         rating: 4.9,
                         sold: "693"
-                      },                                                                       
+                      },
+                      {
+                        id: 67,
+                        name: "Kit 8 Unidades de Vasinho Decorativo de Gesso com Cactus e Plantas Artificiais",
+                        origin: "BR",
+                        price: "27.90",
+                        category: "Casa e Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi20fuptfn5v70.webp",
+                        affiliateLink: "https://s.shopee.com.br/BNvjV7ITi",
+                        rating: 4.3,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 68,
+                        name: "Kit 3 Nichos Triplos Prateleiras Organizadoras para Banheiro em MDF Preto ou Branco",
+                        origin: "BR",
+                        price: "49.99 - 89.99",
+                        category: "Casa e Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-maupqz4w6iux4b.webp",
+                        affiliateLink: "https://s.shopee.com.br/1BGSvRj3zD",
+                        rating: 4.4,
+                        sold: "10mil+"
+                      },  
+                      {
+                        id: 69,
+                        name: "Mochila feminina casual e versátil leve e à prova d'água com grande capacidade para estudantes",
+                        origin: "BR",
+                        price: "57.89",
+                        category: "Bolsas e Mochilas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m78ryz9a1t4i9a.webp",
+                        affiliateLink: "https://s.shopee.com.br/4Au4V9K8Jw",
+                        rating: 4.8,
+                        sold: "7mil+"
+                      },                                                                                 
 ];
