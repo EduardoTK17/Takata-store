@@ -1,0 +1,152 @@
+/* 1. Motores do Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Reset de bordas e larguras */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- FUNDO COM VIDA E MOVIMENTO --- */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Removemos o gradiente daqui para não tapar as bolhas */
+  background-color:transparent; 
+}
+
+/* Criamos um efeito de profundidade no ID root */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 3. Estilização dos Cards (Efeito de Vidro) */
+.product-card {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito escadinha */
+.product-card:nth-child(2n) { transition-delay: 0.05s; }
+.product-card:nth-child(3n) { transition-delay: 0.1s; }
+
+/* 4. Categorias e Rolagem Lateral Blindada */
+.overflow-x-auto {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  min-height: 90px !important; /* Espaço para o balão não cortar */
+  overflow-y: hidden;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 5. Animações e Efeitos */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.btn-pulse {
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Flutuação dos elementos de fundo */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, 50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+/* Animações dos Círculos de Fundo */
+@keyframes mesh-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(10%, 15%) scale(1.1); }
+  66% { transform: translate(-5%, 10%) scale(0.9); }
+}
+
+@keyframes mesh-2 {
+  0%, 100% { transform: translate(0, 0) scale(1.1); }
+  50% { transform: translate(-15%, -20%) scale(1); }
+}
+
+@keyframes mesh-3 {
+  0%, 100% { 
+    transform: translate(0, 0); 
+    opacity: 0.5; 
+  }
+  50% { 
+    transform: translate(10%, -10%); 
+    opacity: 0.8; 
+  }
+}
+
+.animate-mesh-1 { animation: mesh-1 25s ease-in-out infinite; }
+.animate-mesh-2 { animation: mesh-2 30s ease-in-out infinite; }
+.animate-mesh-3 { animation: mesh-3 20s ease-in-out infinite; }
+
+/* Ajuste importante: Seus cards precisam ser semi-transparentes para o efeito aparecer */
+.product-card {
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(12px); /* Efeito de vidro fosco */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+/* Animação de pulso para o botão PRETO do banner */
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}

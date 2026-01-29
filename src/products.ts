@@ -1,0 +1,626 @@
+export interface Product {
+  id: number;
+  name: string;
+  price: string;
+  category: string;
+  image: string;
+  affiliateLink: string;
+  rating: number;      // Adicione esta linha
+  sold: string;        // Adicione esta linha
+  featured?: boolean;  // Adicione esta linha
+  freeShipping?: boolean; // Adicione esta linha
+  origin: 'BR' | 'INT';
+}
+
+export const products: Product[] = [
+  {
+        id: 1,
+        name: "WATERSY Copo garrafa Térmica Inox 591ml Parede Dupla tampa Canudo Premium",
+        origin: "BR",
+        price: "43.90",
+        category: "Cozinha",
+        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcsz2r14c6k2cf.webp", 
+        affiliateLink: "https://s.shopee.com.br/2B8tUQn4nB?share_channel_code=1",
+        featured: true,
+        rating: 4.9,
+        sold: "1mil+"
+      },
+  {
+    id: 2,
+    name: "Copo Térmico 1200ml Personalizado com o Nome - Stitch Premium",
+    origin: "BR",
+    price: "47,03",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjrflddx5fra59.webp",
+    category: "Cozinha",
+    affiliateLink: "https://s.shopee.com.br/3VeH6rTNJn?share_channel_code=1",
+    rating: 4.8,
+    sold: "2,5mil+"
+  },
+  {
+    id: 3,
+    name: "Ventilador de Coluna 103cm-130cm ajuste de altura livremente, ventilador de pé 110v/220v",
+    origin: "BR",
+    price: "86.00", // Preço inicial que aparece no print
+    category: "Eletro",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0t0oki833pde3.webp", 
+    affiliateLink: "https://s.shopee.com.br/4VWiRfaX1y?share_channel_code=1",
+    featured: true,  // Marcado como destaque pelo alto volume de vendas
+    rating: 4.6,    // Nota do produto no print
+    sold: "20mil+"   // Quantidade vendida no print
+  },
+  {
+    id: 4,
+    name: "Tábua de Corte Profissional em Aço Inoxidável 304, Antimofo e Antibacteriano, Ferramenta de Cozinha",
+    origin: "BR",
+    price: "28.99", // Preço promocional que aparece no print
+    category: "Cozinha",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-7ra24-mbjxrrwigjnx20.webp", // Link sugerido da imagem
+    affiliateLink: "https://s.shopee.com.br/8AQ6hn0xeu?share_channel_code=1",
+    featured: false, 
+    rating: 4.8,    // Nota do produto que aparece no print
+    sold: "4mil+"   // Quantidade vendida que aparece no print
+  },
+  {
+    id: 5,
+    name: "Copão Garrafa Tumbler Zona Criativa Com Canudo e Pingente Stitch Harry Potter Original",
+    origin: "BR",
+    price: "129.90",
+    category: "Cozinha",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgs3a7bgi7t0da.webp", 
+    affiliateLink: "https://s.shopee.com.br/W0fZuBhId?share_channel_code=1",
+    featured: false,
+    rating: 4.9,
+    sold: "197"
+  },
+  {
+    id: 6,
+    name: "Ar Condicionado Mini Portátil USB Climatizador Umidificador Ventilador com LED Para Quarto Sala Escritório Mesa",
+    origin: "BR",
+    price: "39.98",
+    category: "Eletronico",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mff3qwsuc8hs40@resize_w450_nl.webp", 
+    affiliateLink: "https://s.shopee.com.br/4fqEXuIHtQ?share_channel_code=1",
+    rating: 4.8,
+    sold: "4mil+"
+  },
+  {
+    id: 7,
+    name: "Cortina Blackout Para Quarto Sala Cozinha PVC Corta 100% Luz 2,80 Largura x 2,30 Altura",
+    origin: "BR",
+    price: "32.97",
+    category: "Casa & Decoracao",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m7die869hkr01f@resize_w450_nl.webp",
+    affiliateLink: "https://s.shopee.com.br/30huejKM8X?share_channel_code=1",
+    rating: 4.7,
+    sold: "80mil+"
+  },
+  {
+    id: 8,
+    name: "Espelho Decorativo Redondo para Escritório Sala Quarto Banheiro com LED 60cm + Suporte",
+    origin: "BR",
+    price: "56.30",
+    category: "Casa & Decoracao",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfy5748s8tmt52.webp",
+    affiliateLink: "https://s.shopee.com.br/6VHmp6HaIS?share_channel_code=1",
+    rating: 4.9,
+    sold: "1mil+"
+  },
+  {
+    id: 9,
+    name: "Escorredor de Louça Duplo Multifuncional Suporte para Pratos, Talheres e Tábua de Corte",
+    origin: "BR",
+    price: "91.00",
+    category: "Cozinha",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg4h3ptpbsw74e.webp",
+    affiliateLink: "https://s.shopee.com.br/4Ats2kag16?share_channel_code=1",
+    rating: 4.7,
+    sold: "8mil+"
+  },
+  {
+    id: 10,
+    name: "Vestido Longo Feminino com Forro e Bojo Manga Variada Confortável e Leve",
+    origin: "BR",
+    price: "70.30",
+    category: "Moda",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbaadmixtnrj1b.webp",
+    affiliateLink: "https://s.shopee.com.br/5q261lILPS?share_channel_code=1",
+    rating: 4.9,
+    sold: "984"
+  },
+  {
+    id: 11,
+    name: "Kit Relógio Feminino com Colar, Pulseira e Brinco Rma13",
+    origin: "BR",
+    price: "33.65",
+    category: "Acessórios Femininos",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-7rcdn-lsymzl4ljwghb6.webp",
+    affiliateLink: "https://s.shopee.com.br/8AQ0nvhUV4?share_channel_code=1",
+    rating: 4.5,
+    sold: "8mil+"
+  },
+  {
+    id: 12,
+    name: "Perfume Original Caviar Night 100ml Paris Elysses",
+    origin: "BR",
+    price: "78.90",
+    category: "Perfumes",
+    image: "https://down-br.img.susercontent.com/file/8a26f73aeef9078e605ca74230cc7d8a.webp",
+    affiliateLink: "https://s.shopee.com.br/AKUVNAj5rB?share_channel_code=1",
+    rating: 4.9,
+    sold: "40mil+"
+  },
+  {
+    id: 13,
+    name: "Perfume Woman Love Le Parfum 75ml",
+    origin: "BR",
+    price: "29.90",
+    category: "Perfumes",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1c03v282u9s86.webp",
+    affiliateLink: "https://s.shopee.com.br/6VHmo292zv?share_channel_code=1",
+    rating: 4.8,
+    sold: "4mil+"
+  },
+  {
+    id: 14,
+    name: "Kit SOS Cachos Coco Família com Creme de Pentear 1kg Salon Line",
+    origin: "BR",
+    price: "80.00",
+    category: "Cuidados com Cabelo",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-8258n-mfukepwehqtk34.webp",
+    affiliateLink: "https://s.shopee.com.br/5q260eFYWs?share_channel_code=1",
+    rating: 4.9,
+    sold: "10mil+"
+  },
+  {
+    id: 15,
+    name: "Gelatina Todecacho Não Sai da Minha Cabeça 1kg Salon Line",
+    origin: "BR",
+    price: "37.49",
+    category: "Cuidados com Cabelo",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0u7vsq0duuv9a.webp",
+    affiliateLink: "https://s.shopee.com.br/7fTkBukSrU?share_channel_code=1",
+    rating: 4.9,
+    sold: "100mil+"
+  },
+  {
+    id: 16,
+    name: "Kit 4 Top Feminino com Bojo Microfibra Alça Larga Lingerie Confortável",
+    origin: "BR",
+    price: "59.99",
+    category: "Lingerie Feminina",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me7mk3kh1uyo54.webp",
+    affiliateLink: "https://s.shopee.com.br/1gCX2cj6nP?share_channel_code=1",
+    rating: 4.8,
+    sold: "3mil+"
+  },
+  {
+    id: 17,
+    name: "Fita de Medição Corporal Antropométrica com Cálculo de IMC",
+    origin: "BR",
+    price: "45.90",
+    category: "Saúde e Bem-Estar",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbnftsox19bscb.webp",
+    affiliateLink: "https://s.shopee.com.br/5fiVy6gHh3?share_channel_code=1",
+    rating: 4.9,
+    sold: "20mil+"
+  },
+  {
+    id: 18,
+    name: "Body Splash Cabelo e Corpo Xêrosa Glamour Chic 200ml",
+    origin: "BR",
+    price: "25.81",
+    category: "Perfumaria",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-82596-mfuz10j0hpn022.webp",
+    affiliateLink: "https://s.shopee.com.br/7VAA9LPCSY?share_channel_code=1",
+    rating: 4.7,
+    sold: "5mil+"
+  },
+  {
+    id: 19,
+    name: "Lixeira Cesto de Lixo Automática Suspensa 9 Litros para Banheiro Cozinha Escritório",
+    origin: "BR",
+    price: "24.90",
+    category: "Organização e Limpeza",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcqkrblr07wha2.webp",
+    affiliateLink: "https://s.shopee.com.br/9fEdVnGtei?share_channel_code=1",
+    rating: 4.8,
+    sold: "10mil+"
+  },
+  {
+    id: 20,
+    name: "Balança Digital de Bioimpedância Bluetooth Corporal até 180kg com Resultado no Celular",
+    origin: "BR",
+    price: "31.80",
+    category: "Saúde e Bem-Estar",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzib4imuteed82.webp",
+    affiliateLink: "https://s.shopee.com.br/1qVmBKqnmO?share_channel_code=1",
+    rating: 4.9,
+    sold: "10mil+"
+  },
+  {
+    id: 21,
+    name: "Boia Inflável em Forma de Donut para Crianças, Adolescentes e Adultos 60/70/90/120 cm",
+    origin: "BR",
+    price: "14.16",
+    category: "Lazer e Piscina",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-822zv-mi5mvwyxc8p4fc.webp",
+    affiliateLink: "https://s.shopee.com.br/20pTXtSYem?share_channel_code=1",
+    rating: 4.7,
+    sold: "73"
+  },
+  {
+    id: 22,
+    name: "Jogo de Xícaras para Café e Chá Rosa com Suporte Kit 4 Canecas Poá",
+    origin: "BR",
+    price: "57.00",
+    category: "Cozinha",
+    image: "https://down-br.img.susercontent.com/file/br-11134201-23010-yz3xtrmccemve6.webp",
+    affiliateLink: "https://s.shopee.com.br/7pmnXRj7xu?share_channel_code=1",
+    rating: 4.9,
+    sold: "3,2mil+"
+  },
+  {
+    id: 23,
+    name: "Lovito Maiô Feminino com Decote em V com Detalhe em Metal LNL42135",
+    origin: "INT",
+    price: "49.42",
+    category: "Moda Praia",
+    image: "https://down-br.img.susercontent.com/file/sg-11134201-7rd49-m7hg9lqo58fq0f.webp",
+    affiliateLink: "https://s.shopee.com.br/2LRqz2XoAI?share_channel_code=1",
+    rating: 4.9,
+    sold: "20mil+"
+  },
+  {
+    id: 24,
+    name: "Caixa Térmica Cooler Multifuncional 5 em 1 com 2 Mesas e 2 Banquetas Integradas 32 Litros",
+    origin: "BR",
+    price: "269.99",
+    category: "Lazer e Camping",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lt2g69s846x912.webp",
+    affiliateLink: "https://s.shopee.com.br/AUnT7FcTzd?share_channel_code=1",
+    rating: 4.8,
+    sold: "6mil+"
+  },
+  {
+    id: 25,
+    name: "Boia Rede Flores para Piscina Cama Flutuante Adulto",
+    origin: "BR",
+    price: "34.99",
+    category: "Lazer e Piscina",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-md7i9hihwzea5d.webp",
+    affiliateLink: "https://s.shopee.com.br/W07ChNSpI?share_channel_code=1",
+    rating: 4.9,
+    sold: "295"
+  },
+  {
+    id: 26,
+    name: "Mangueira de Jardim Reforçada Siliconada Trançada 1/2 x 3 mm Azul",
+    origin: "BR",
+    price: "104.85",
+    category: "Jardim e Exterior",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mct971ze8etd2e.webp",
+    affiliateLink: "https://s.shopee.com.br/6AeTwTZeFi?share_channel_code=1",
+    rating: 4.9,
+    sold: "716"
+  },
+  {
+    id: 27,
+    name: "Trena Longa 50 Metros em Fibra de Vidro com Manivela Profissional",
+    origin: "BR",
+    price: "19.80",
+    category: "Ferramentas",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lymv1zolpa1x2d.webp",
+    affiliateLink: "https://s.shopee.com.br/7AWugdjV7Y?share_channel_code=1",
+    rating: 4.9,
+    sold: "5mil+"
+  },
+  {
+    id: 28,
+    name: "Climatizador de Ar Ventisol Portátil Clin 60 Pro 60 Litros 150W Branco/Cinza",
+    origin: "BR",
+    price: "839.99",
+    category: "Climatização",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgz4o2wfi77r09.webp",
+    affiliateLink: "https://s.shopee.com.br/2LRagscza2?share_channel_code=1",
+    rating: 4.8,
+    sold: "3mil+"
+  },
+  {
+    id: 29,
+    name: "Tapete Gelado Refrescante para Cachorro e Gato Pet 50cm x 65cm",
+    origin: "BR",
+    price: "39.90",
+    category: "Pet Shop",
+    image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyf7wg0kd9xx62.webp",
+    affiliateLink: "https://s.shopee.com.br/2Vl0c8Y9tD?share_channel_code=1",
+    rating: 4.8,
+    sold: "4mil+"
+  },
+  {
+      id: 30,
+        name: "Kit 10 Pedra Porosa para Compressor de Ar Oxigenação de Aquário",
+          origin: "BR",
+            price: "25.70",
+              category: "Aquarismo",
+                image: "https://down-br.img.susercontent.com/file/sg-11134201-82612-mjoa2d92vvnr58@resize_w900_nl.webp",
+                  affiliateLink: "https://s.shopee.com.br/6VHx23QO6a?share_channel_code=1",
+                    rating: 4.9,
+                      sold: "1mil+"
+                      },
+                      {
+                        id: 31,
+                        name: "Carregador Portátil Power Bank Solar 20000mAh com Cabos 5 em 1 e Lanterna LED",
+                        origin: "BR",
+                        price: "60.99",
+                        category: "Acessórios para Celular",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rdxx-md0gws953auv02.webp",
+                        affiliateLink: "https://s.shopee.com.br/5L5zfRVuiz?share_channel_code=1",
+                        rating: 4.6,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 32,
+                        name: "Colchão Inflável Casal para Camping e Praia Suporta 300kg com Bomba de Ar Manual Bestway",
+                        origin: "BR",
+                        price: "139.90",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc2cgtyxynjb15.webp",
+                        affiliateLink: "https://s.shopee.com.br/2B8xuTiYgk?share_channel_code=1",
+                        rating: 4.9,
+                        sold: "20mil+"
+                      },
+                      {
+                        id: 33,
+                        name: "Mesa Dobrável Vira Maleta com Alça Portátil 1,80m para Camping, Pesca e Área Externa",
+                        origin: "BR",
+                        price: "279.90",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m7qvt44tnhqsce.webp",
+                        affiliateLink: "https://s.shopee.com.br/14TKwjtca?share_channel_code=1",
+                        rating: 4.9,
+                        sold: "9mil+"
+                      },
+                      {
+                        id: 34,
+                        name: "Mochila Grande Impermeável Executiva Reforçada para Notebook com Cadeado e Bolso Antifurto",
+                        origin: "BR",
+                        price: "68.99",
+                        category: "Mochilas e Bolsas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzhs324fmp1d0e.webp",
+                        affiliateLink: "https://s.shopee.com.br/7Kr4507uAK?share_channel_code=1",
+                        rating: 4.8,
+                        sold: "20mil+"
+                      },
+                      {
+                        id: 35,
+                        name: "Fatiador Profissional Multifuncional 16 em 1 em Aço Inoxidável",
+                        origin: "BR",
+                        price: "35.99",
+                        category: "Cozinha",
+                        image: "https://down-tx-br.img.susercontent.com/br-11134207-81z1k-mhjfa9ir0mbq21.webp",
+                        affiliateLink: "https://s.shopee.com.br/5firohbgci",
+                        rating: 4.8,
+                        sold: "30mil+"
+                      },
+                      {
+                        id: 36,
+                        name: "Berço Americano Vira Cama com Cama Auxiliar, Trocador e Gaveteiro Branco",
+                        origin: "BR",
+                        price: "1189.90",
+                        category: "Bebês e Infantil",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rdyf-lzl6u0bnxppwee.webp",
+                        affiliateLink: "https://s.shopee.com.br/6VHyqDbYWX",
+                        rating: 4.9,
+                        sold: "93"
+                      },
+                      {
+                        id: 37,
+                        name: "Quarto de Bebê Completo 100% MDF com Cômoda, Berço e Guarda-Roupa Nina Branco/Amadeirado",
+                        origin: "BR",
+                        price: "1099.99",
+                        category: "Bebês e Infantil",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rdwo-mctnwoncftj078.webp",
+                        affiliateLink: "https://s.shopee.com.br/50TBD8cPiS",
+                        rating: 4.7,
+                        sold: "1mil+"
+                      },
+                      {
+                        id: 38,
+                        name: "Berço Cômoda Meu Bebê Multimóveis MP4309 com Colchão Incluso",
+                        origin: "BR",
+                        price: "546.10",
+                        category: "Bebês e Infantil",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rep8-m1o8e8gcec2va5.webp",
+                        affiliateLink: "https://s.shopee.com.br/10x2SKmqOs",
+                        rating: 4.8,
+                        sold: "530"
+                      },
+                      {
+                        id: 39,
+                        name: "Quarto de Bebê Completo com Berço Americano Ben 3 em 1 e Cômoda Uli 4 Gavetas 100% MDF",
+                        origin: "BR",
+                        price: "949.90",
+                        category: "Bebês e Infantil",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rdwo-lzi1v6clcmgn4c.webp",
+                        affiliateLink: "https://s.shopee.com.br/8zzJywGH8n",
+                        rating: 4.9,
+                        sold: "3mil+"
+                      },
+                      {
+                        id: 40,
+                        name: "Quarto Infantil com Berço e Cômoda Olívia Multimóveis Branco",
+                        origin: "BR",
+                        price: "859.99",
+                        category: "Bebês e Infantil",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7qvdv-lhxg19xeo853c1@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/2qOgdrp1Zq",
+                        rating: 4.8,
+                        sold: "1mil+"
+                      },
+                      {
+                        id: 41,
+                        name: "Kit 4 Banquetas Eiffel Giratórias Estofadas com Encosto para Sala de Jantar",
+                        origin: "BR",
+                        price: "769.90",
+                        category: "Móveis",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjqyjw1rdjpiba.webp",
+                        affiliateLink: "https://s.shopee.com.br/2qOge8Z9Sj",
+                        rating: 4.8,
+                        sold: "348"
+                      },
+                      {
+                        id: 43,
+                        name: "Banqueta Plástica Multiuso Dobrável Capacidade 150kg Vonder",
+                        origin: "BR",
+                        price: "59.90",
+                        category: "Utilidades Domésticas",
+                        image: "https://down-br.img.susercontent.com/file/b608049528cc70588dd915dd1b058c81.webp",
+                        affiliateLink: "https://s.shopee.com.br/1gCjGbt6s0",
+                        rating: 4.9,
+                        sold: "477"
+                      },
+                      {
+                        id: 44,
+                        name: "Mochila Unissex com Desenhos Reforçada Grande Capacidade Antifurto",
+                        origin: "BR",
+                        price: "",
+                        category: "Mochilas e Bolsas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7qukw-lhz5qxwaj6mm64.webp",
+                        affiliateLink: "https://s.shopee.com.br/2LSQ3z90Hx",
+                        rating: 4.9,
+                        sold: "2mil+"
+                      },
+                      {
+                        id: 45,
+                        name: "Banqueta Multiuso Dobrável com Alça Suporta até 150kg para Camping Pesca e Rancho",
+                        origin: "BR",
+                        price: "",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mdvrn6zbkfsx13.webp",
+                        affiliateLink: "https://s.shopee.com.br/40ae39DVFQ",
+                        rating: 4.9,
+                        sold: "1mil+"
+                      },
+                      {
+                        id: 46,
+                        name: "Banquinho Banco Banqueta Dobrável Portátil 21cm Arqplast Preta",
+                        origin: "BR",
+                        price: "21.00",
+                        category: "Utilidades Domésticas",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7ra30-m590zm0l55sn7e.webp",
+                        affiliateLink: "https://s.shopee.com.br/14VHw7Uq0",
+                        rating: 4.7,
+                        sold: "6mil+"
+                      },
+                      {
+                        id: 47,
+                        name: "Tenda Cabana Gazebo Dobrável em Alumínio com Bolsa de Transporte 3x3x2,5m Erbmaquinas",
+                        origin: "BR",
+                        price: "499.99",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rblz-m5xaxiynu2tmb8.webp",
+                        affiliateLink: "https://s.shopee.com.br/8pftrlXiKe",
+                        rating: 4.9,
+                        sold: "904"
+                      },
+                      {
+                        id: 48,
+                        name: "Tenda de Praia Sanfonada Mor X-Flex Gazebo 3x3 Articulado com Pé de Alumínio",
+                        origin: "BR",
+                        price: "",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrzy53l2noy5d3.webp",
+                        affiliateLink: "https://s.shopee.com.br/7pnMg23l2q",
+                        rating: 4.9,
+                        sold: "7mil+"
+                      },
+                      {
+                        id: 49,
+                        name: "Tenda Gazebo 3 x 6 Metros em Aço Dobrável Várias Cores BEL",
+                        origin: "BR",
+                        price: "",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rblo-lmt1tl7jmhqyb2.webp",
+                        affiliateLink: "https://s.shopee.com.br/7fTwTs0pEH",
+                        rating: 4.6,
+                        sold: "215"
+                      },
+                      {
+                        id: 50,
+                        name: "Lampião Luminária Solar para Camping com Carregador USB LED Lanterna",
+                        origin: "BR",
+                        price: "28.50",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rd6p-lwkbgx5q0joxc9.webp",
+                        affiliateLink: "https://s.shopee.com.br/40ae7JRwJB",
+                        rating: 4.8,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 51,
+                        name: "Conjunto Academia Top Fitness e Legging Cintura Alta Zero Transparência Suplex Strep Original",
+                        origin: "BR",
+                        price: "R$49,90 - R$59,90",
+                        category: "Moda Fitness",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me5wxzf59l34eb@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/6VHz6IqnFV",
+                        rating: 4.7,
+                        sold: "4mil+"
+                      },
+                      {
+                        id: 52,
+                        name: "Kit Jogo 4 Xícaras Mini Wolff 100ml Café Cafézinho Cantinho Café Pearl Bolinhas",
+                        origin: "BR",
+                        price: "29.99",
+                        category: "Casa e Cozinha",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rat8-maiuwgvwqq6b4d.webp",
+                        affiliateLink: "https://s.shopee.com.br/6KyYuGOUfK",
+                        rating: 5.0,
+                        sold: "247"
+                      },
+                      {
+                        id: 53,
+                        name: "Mesinha Dobrável Portátil Petisqueira para Piscina Pescaria Camping e Praia",
+                        origin: "BR",
+                        price: "69,90",
+                        category: "Lazer e Camping",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9spj4nmrbiaf4.webp",
+                        affiliateLink: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9spj4nmrbiaf4.webp",
+                        rating: 4.8,
+                        sold: "335"
+                      },
+                      {
+                        id: 54,
+                        name: "Espelho Retangular EL14 Corpo Inteiro 170x70cm com LED Jateado Luz Branca e Amarela",
+                        origin: "BR",
+                        price: "509,15",
+                        category: "Casa & Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjygj3rau6tife.webp",
+                        affiliateLink: "https://s.shopee.com.br/6VHz6yMUUv",
+                        rating: 4.7,
+                        sold: "1mil+"
+                      },
+                      {
+                        id: 55,
+                        name: "Tapete Passadeira Felpudo Peludo para Corredor Sala Quarto Beira de Cama",
+                        origin: "BR",
+                        price: "15,50",
+                        category: "Casa & Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-macr7gj8pdvza4.webp",
+                        affiliateLink: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-macr7gj8pdvza4.webp",
+                        rating: 4.4,
+                        sold: "50mil+"
+                      },
+                      {
+                        id: 56,
+                        name: "Organizador de Ovos com 4 Espaços e Andares",
+                        origin: "BR",
+                        price: "17,97 - 72,00",
+                        category: "Casa & Organização",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-8262i-mjbblzuwk0lh18.webp",
+                        affiliateLink: "https://s.shopee.com.br/4LDUYA1JtD",
+                        rating: 4.8,
+                        sold: "6mil+"
+                      },
+                      
+];
