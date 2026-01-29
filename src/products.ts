@@ -676,5 +676,60 @@ export const products: Product[] = [
                         affiliateLink: "https://s.shopee.com.br/LhLpBN5u7",
                         rating: 4.7,
                         sold: "722"
-                      },                
+                      },
+                      {
+                        id: 62,
+                        name: "Copo Térmico Grande 1200ml em Aço Inox com Alça e Canudo de Metal",
+                        origin: "BR",
+                        price: "37.49",
+                        category: "Cozinha e Utilidades",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9fw9t7ulx4yb8.webp",
+                        affiliateLink: "https://s.shopee.com.br/3B1XEFRaUL",
+                        rating: 4.8,
+                        sold: "320"
+                      },
+                      {
+                        id: 63,
+                        name: "Jogo de Lençol Percal 180 Fios 100% Algodão – Todos os Tamanhos",
+                        origin: "BR",
+                        price: "56.70 - 75.95",
+                        category: "Cama, Mesa e Banho",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mflnn6x2vldw1e.webp",
+                        affiliateLink: "https://s.shopee.com.br/9KcAZobz85",
+                        rating: 4.8,
+                        sold: "2mil+"
+                      },
+                      {
+                        id: 64,
+                        name: "Saia Tule Tutu Brilho Colorida 40cm com LED para Carnaval, Ballet, Dança e Fantasia",
+                        origin: "BR",
+                        price: "26.90",
+                        category: "Fantasias e Festas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi4m89zygd1f72.webp",
+                        affiliateLink: "https://s.shopee.com.br/7VAWOpvGgn",
+                        rating: 4.8,
+                        sold: "1mil+"
+                      },  
+                      {
+                        id: 65,
+                        name: "Robô Aspirador Inteligente 3 em 1 para Limpeza Doméstica Silencioso Ideal para Casa com Pets E4",
+                        origin: "BR",
+                        price: "58.99",
+                        category: "Casa e Limpeza",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgt001m9v6kkb1.webp",
+                        affiliateLink: "https://s.shopee.com.br/W0m43FdQJ",
+                        rating: 4.4,
+                        sold: "7mil+"
+                      },
+                      {
+                        id: 66,
+                        name: "Par de Baquetas 7A Liverpool Sensation Grip Series com Grip EVA",
+                        origin: "BR",
+                        price: "37.10",
+                        category: "Instrumentos Musicais",
+                        image: "https://down-br.img.susercontent.com/file/2e34be6f3c55ef00e0dc3b2f14bdda88.webp",
+                        affiliateLink: "https://s.shopee.com.br/9fF0z4yDy4",
+                        rating: 4.9,
+                        sold: "693"
+                      },                                                                       
 ];
