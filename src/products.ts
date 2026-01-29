@@ -644,5 +644,37 @@ export const products: Product[] = [
                         rating: 4.8,
                         sold: "70mil+"
                       },
-                      
+                      {
+                        id: 59,
+                        name: "Esfoliante Corporal e Facial Frutas Poran – Escolha o Seu Tipo",
+                        origin: "BR",
+                        price: "12.25",
+                        category: "Beleza e Cuidados Pessoais",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lt44nts8bxgy8b.webp",
+                        affiliateLink: "https://s.shopee.com.br/2VlqOrrWcf",
+                        rating: 4.8,
+                        sold: "20mil+"
+                      },
+                      {
+                        id: 60,
+                        name: "Kit 3 Conjuntos Academia Feminino Top + Legging Zero Transparência Fitness",
+                        origin: "BR",
+                        price: "149.90",
+                        category: "Moda Fitness Feminina",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf8le3twx6o795@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/50TBNehUX3",
+                        rating: 4.7,
+                        sold: "2mil+"
+                      },
+                      {
+                        id: 61,
+                        name: "Tapete Belga Estampado Para Sala e Quarto de Luxo – Lançamentos Exclusivos",
+                        origin: "BR",
+                        price: "64.99 - 229.99",
+                        category: "Casa e Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meq6c1qewzya7b@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/LhLpBN5u7",
+                        rating: 4.7,
+                        sold: "722"
+                      },                
 ];
