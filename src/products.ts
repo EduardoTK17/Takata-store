@@ -622,5 +622,16 @@ export const products: Product[] = [
                         rating: 4.8,
                         sold: "6mil+"
                       },
+                      {
+                        id: 57,
+                        name: "Cortina Blackout em PVC 100% Corta Luz 2,80m x 2,30m para Quarto Sala ou Cozinha",
+                        origin: "BR",
+                        price: "",
+                        category: "Casa & Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84shxe4v8c1d9.webp",
+                        affiliateLink: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84shxe4v8c1d9.webp",
+                        rating: 4.7,
+                        sold: "80mil+"
+                      },
                       
 ];
