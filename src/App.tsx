@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ShoppingBag, Search, Menu, X, ArrowRight, Users, Megaphone, Star, Truck , Plane } from 'lucide-react';
+import { ShoppingBag, Search, Menu, X, ArrowRight, Users, Megaphone, Star, Truck, Plane, ChevronDown, Check } from 'lucide-react';
 import { products } from './products';
 import './App.css';
 
@@ -20,6 +20,11 @@ interface Product {
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Todos");
+  
+  // NOVOS ESTADOS PARA O DROPDOWN
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [categorySearch, setCategorySearch] = useState("");
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("Início");
   const [showButtons, setShowButtons] = useState(false);
@@ -183,22 +188,71 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full mb-6">
-          <div className="flex gap-3 overflow-x-auto py-4 px-4 flex-nowrap scrollbar-custom touch-pan-x">
-            {categories.map(cat => (
-              <button 
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-6 py-2.5 rounded-full whitespace-nowrap transition-all duration-300 font-bold text-sm flex-shrink-0 shadow-sm ${
-                  selectedCategory === cat 
-                    ? 'bg-shopee text-white shadow-lg shadow-orange-200 scale-105 ring-2 ring-orange-100' 
-                    : 'bg-white/80 backdrop-blur-sm text-gray-600 border border-white/80 hover:bg-white'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+        {/* --- NOVO FILTRO DE CATEGORIAS (PESQUISA INTELIGENTE) --- */}
+        <div className="relative w-full max-w-md mx-auto mb-8 px-4 z-40">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="🔍 Filtrar por categoria..."
+              value={categorySearch}
+              onClick={() => setIsCategoryOpen(!isCategoryOpen)}
+              onChange={(e) => {
+                setCategorySearch(e.target.value);
+                setIsCategoryOpen(true);
+              }}
+              className="w-full pl-5 pr-10 py-3 rounded-xl border border-white/40 shadow-lg outline-none focus:ring-2 focus:ring-shopee/50 font-bold text-gray-700 bg-white/60 backdrop-blur-md transition-all placeholder-gray-500"
+            />
+            <ChevronDown 
+              className={`absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 transition-transform duration-300 ${isCategoryOpen ? 'rotate-180' : ''}`} 
+              onClick={() => setIsCategoryOpen(!isCategoryOpen)}
+            />
           </div>
+
+          {/* LISTA QUE ABRE QUANDO CLICA */}
+          {isCategoryOpen && (
+            <div className="absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/50 max-h-60 overflow-y-auto z-50 animate-fade-in custom-scrollbar">
+              {categories
+                .filter(cat => cat.toLowerCase().includes(categorySearch.toLowerCase()))
+                .map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => {
+                      setSelectedCategory(cat);
+                      setCategorySearch(cat === 'Todos' ? '' : cat);
+                      setIsCategoryOpen(false);
+                    }}
+                    className={`w-full text-left px-5 py-3 hover:bg-orange-50 transition-colors flex items-center justify-between border-b border-gray-100 last:border-0 ${
+                      selectedCategory === cat ? 'text-shopee font-black bg-orange-50' : 'text-gray-600 font-medium'
+                    }`}
+                  >
+                    {cat}
+                    {selectedCategory === cat && <Check className="w-4 h-4 text-shopee" />}
+                  </button>
+                ))}
+                
+              {categories.filter(cat => cat.toLowerCase().includes(categorySearch.toLowerCase())).length === 0 && (
+                <div className="p-4 text-center text-gray-400 text-sm font-medium">Nenhuma categoria encontrada 😕</div>
+              )}
+            </div>
+          )}
+          
+          {/* ETIQUETA DE CONFIRMAÇÃO */}
+          {selectedCategory !== "Todos" && (
+            <div className="mt-3 text-center animate-fade-in">
+              <span className="inline-flex items-center gap-2 bg-shopee text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                Filtro: {selectedCategory}
+                <button 
+                  onClick={() => {
+                    setSelectedCategory("Todos");
+                    setCategorySearch("");
+                  }}
+                  className="bg-white/20 rounded-full p-0.5 hover:bg-white/40 transition-colors"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
