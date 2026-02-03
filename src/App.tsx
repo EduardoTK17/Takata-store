@@ -322,8 +322,19 @@ function App() {
       </div>
 
       <footer className="bg-white/30 backdrop-blur-sm border-t border-white/50 py-12 text-center text-gray-500 text-xs mt-20">
-        <p className="font-bold">© 2026 Takata Store. Todos os direitos reservados.</p>
-        <p className="mt-2 opacity-70">Achadinhos selecionados com carinho ✨</p>
+        <div className="flex flex-col items-center gap-2">
+          <p className="font-bold text-gray-700 text-sm">© 2026 Takata Store. Todos os direitos reservados.</p>
+          
+          {/* LINK PARA O SEU NOVO E-MAIL */}
+          <a 
+            href="mailto:contato@takatastore.com.br" 
+            className="text-shopee font-bold hover:underline transition-all flex items-center gap-1"
+          >
+            contato@takatastore.com.br
+          </a>
+
+          <p className="mt-2 opacity-70">Achadinhos selecionados com carinho ✨</p>
+        </div>
       </footer>
     </div>
   );
