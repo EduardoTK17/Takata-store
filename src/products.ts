@@ -841,5 +841,41 @@ export const products: Product[] = [
                         affiliateLink: "https://s.shopee.com.br/5L62048tO6",
                         rating: 4.4,
                         sold: "305"
-                      },                                                           
+                      }, 
+                      {
+                        id: 77,
+                        name: "Kit 10 Peças Infantil Menino com Bermuda e Camiseta para o Dia a Dia em Algodão",
+                        origin: "BR",
+                        price: "89.99",
+                        category: "Moda Infantil",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lvucn40fzxyt82.webp",
+                        affiliateLink: "https://s.shopee.com.br/gKK4pteIa",
+                        rating: 4.9,
+                        sold: "9mil+"
+                      },
+                      {
+                        id: 78,
+                        name: "Kit 10 Peças Body e Calça Canelado Bebê 100% Algodão com 5 Bodys e 5 Calças Antialérgico",
+                        origin: "BR",
+                        price: "89.90",
+                        category: "Moda Infantil",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lnumuy1ew8gc96.webp",
+                        affiliateLink: "https://s.shopee.com.br/1gCkg4pA90?share_channel_code=1",
+                        rating: 4.6,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 79,
+                        name: "Kit 10 Peças de Roupas para Bebê Menino com 5 Bodys Manga Longa e 5 Calças Mijão",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Bebê",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lxu16wp0dcxrde.webp",
+                        affiliateLink: "https://s.shopee.com.br/AABIoABctK?share_channel_code=1",
+                        rating: 4.9,
+                        sold: "10mil+"
+                      },
+                      
+                      
+                                                                                
 ];
