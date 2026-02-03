@@ -875,7 +875,104 @@ export const products: Product[] = [
                         rating: 4.9,
                         sold: "10mil+"
                       },
-                      
-                      
-                                                                                
+                      {
+                        id: 80,
+                        name: "Kit 4 Capas de Almofadas Decorativas 45x45 cm para Sala, Quarto e Escritório",
+                        origin: "BR",
+                        price: "11.90",
+                        category: "Casa e Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcgs7qhqd7aqad.webp",
+                        affiliateLink: "https://s.shopee.com.br/1BGaywUYAJ",
+                        rating: 4.6,
+                        sold: "2mil+"
+                      },      
+                      {
+                        id: 81,
+                        name: "Capa de Chuva para Sapato Premium Protetor Impermeável para Tênis e Calçados de Motoqueiro",
+                        origin: "BR",
+                        price: "",
+                        category: "Acessórios de Moda",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwk0nro3aahebd.webp",
+                        affiliateLink: "https://s.shopee.com.br/9fF96emto9",
+                        rating: 4.8,
+                        sold: "670"
+                      },  
+                      {
+                        id: 83,
+                        name: "Quadro Decorativo Trio Gratidão Ramo de Trigo Prosperidade Branco Moderno para Sala, Hall e Escritório",
+                        origin: "BR",
+                        price: "",
+                        category: "Casa e Decoração",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mavzlumhjtsf85.webp",
+                        affiliateLink: "https://s.shopee.com.br/9zrzVOvjeC",
+                        rating: 4.7,
+                        sold: "6mil+"
+                      },    
+                      {
+                        id: 84,
+                        name: "Kit Gamer Completo para Celular com Headset, Teclado, Mouse e Hub USB Tipo C ou V8",
+                        origin: "BR",
+                        price: "",
+                        category: "Eletrônicos e Games",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma8u3vwko8l5e5.webp",
+                        affiliateLink: "https://s.shopee.com.br/7AXo8MB4j2",
+                        rating: 4.8,
+                        sold: "2mil+"
+                      },       
+                      {
+                        id: 85,
+                        name: "WD VEST Biquíni Plus Size com Estilo, Conforto e Perfeito Caimento 2025 XX297",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Praia",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m6jpwxmo83zkde.webp",
+                        affiliateLink: "https://s.shopee.com.br/5q2QXzivgX",
+                        rating: 4.7,
+                        sold: "156"
+                      },        
+                      {
+                        id: 86,
+                        name: "Jogo Americano Areia Impermeável em PVC com 6 Lugares",
+                        origin: "BR",
+                        price: "",
+                        category: "Cozinha e Mesa",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8679o5qauc1c2.webp",
+                        affiliateLink: "https://s.shopee.com.br/1VtRO66ofD",
+                        rating: 4.8,
+                        sold: "270"
+                      },
+                      {
+                        id: 87,
+                        name: "Colar Feminino Personalizado Semi Joia 17mm com Foto Gravada 45cm Banho Ouro 18k",
+                        origin: "BR",
+                        price: "",
+                        category: "Joias e Acessórios",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mdyouuexi58j3b@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/20phz8bHaH",
+                        rating: 4.9,
+                        sold: "3mil+"
+                      },
+                      {
+                        id: 88,
+                        name: "Jogo de Chave Catraca Reversível com 40 ou 46 Peças em Maleta Completa de Ferramentas",
+                        origin: "BR",
+                        price: "",
+                        category: "Ferramentas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfrvxdr9i96v11.webp",
+                        affiliateLink: "https://s.shopee.com.br/3B1fNSx7wG",
+                        rating: 4.8,
+                        sold: "200mil+"
+                      },    
+                      {
+                        id: 89,
+                        name: "Conjunto Feminino Top + Calça Leg com Saia Tapa Bumbum em Suplex para Academia Plus Size",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Fitness",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mesoi04veosi08.webp",
+                        affiliateLink: "https://s.shopee.com.br/8zzSKJ2tGd",
+                        rating: 4.5,
+                        sold: "302"
+                      },
+                                                                                                                                                                                          
 ];
