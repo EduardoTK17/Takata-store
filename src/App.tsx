@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ShoppingBag, Search, Menu, X, ArrowRight, Users, Megaphone, Star, Truck, Plane, ChevronDown, Check } from 'lucide-react';
-import { products } from './products';
+import { products } from './products.ts';
 import './App.css';
 
 interface Product {

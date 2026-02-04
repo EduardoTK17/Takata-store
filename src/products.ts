@@ -974,5 +974,125 @@ export const products: Product[] = [
                         rating: 4.5,
                         sold: "302"
                       },
-                                                                                                                                                                                          
+                      {
+                        id: 90,
+                        name: "Fone de Ouvido Bluetooth com Orelhas de Gato e Luz Colorida sem Fio X4/X2",
+                        origin: "BR",
+                        price: "",
+                        category: "Eletrônicos",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhhapwz9asjn65.webp",
+                        affiliateLink: "https://s.shopee.com.br/1BGcCjFLI5",
+                        rating: 4.7,
+                        sold: "10mil+"
+                      },    
+                      {
+                        id: 91,
+                        name: "Kit Organizador com Prateleira para Banheiro e Suporte para Papel Higiênico",
+                        origin: "BR",
+                        price: "",
+                        category: "Casa e Banheiro",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf8omhr8to9386.webp",
+                        affiliateLink: "https://s.shopee.com.br/9zs0jSDjOM",
+                        rating: 4.7,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 92,
+                        name: "Kit Treino Funcional com Halteres, Barra, Supino e Kettlebell 10kg, 15kg ou 20kg",
+                        origin: "BR",
+                        price: "",
+                        category: "Fitness e Musculação",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me06pxvjxkaq62.webp",
+                        affiliateLink: "https://s.shopee.com.br/4q9ucsYwXX",
+                        rating: 4.9,
+                        sold: "6mil+"
+                      },
+                      {
+                        id: 93,
+                        name: "Colchonete para Academia Premium 90x40x3 cm em Espuma D23 Impermeável para Yoga e Pilates",
+                        origin: "BR",
+                        price: "",
+                        category: "Fitness e Musculação",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzjhnmdxayw586@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/5q2RoyBgF5",
+                        rating: 4.7,
+                        sold: "70mil+"
+                      },
+                      {
+                        id: 94,
+                        name: "Bicicleta Elétrica Dobrável NUDA para Adultos com Pedal Assistido para Uso Urbano e Viagens",
+                        origin: "BR",
+                        price: "",
+                        category: "Mobilidade Urbana",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj0pubc1kdty09.webp",
+                        affiliateLink: "https://s.shopee.com.br/5q2Rpj1Hv3",
+                        rating: 4.7,
+                        sold: "1mil+"
+                      },  
+                      {
+                        id: 95,
+                        name: "Kit Fantasia Coelha com Saia e Meia Arrastão para Carnaval",
+                        origin: "BR",
+                        price: "",
+                        category: "Fantasias e Festas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjao3ts7if4244.webp",
+                        affiliateLink: "https://s.shopee.com.br/6VI8dLSn2p",
+                        rating: 4.6,
+                        sold: "204"
+                      },
+                      {
+                        id: 96,
+                        name: "Copo Térmico Inox 1.2L com Canudo e Protetor Floral Personalizado",
+                        origin: "BR",
+                        price: "",
+                        category: "Cozinha e Bebidas",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc0xo7cul3tz5e.webp",
+                        affiliateLink: "https://s.shopee.com.br/gKLggrdxj",
+                        rating: 4.9,
+                        sold: "1mil+"
+                      },
+                      {
+                        id: 97,
+                        name: "HT VEST Conjunto de Biquíni com Detalhes Elegantes e Acabamento Refinado 2024 XX303",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Praia",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-824gw-mfjl981r9b7w2f@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/5VPbTbbLhl",
+                        rating: 4.8,
+                        sold: "708"
+                      },
+                      {
+                        id: 98,
+                        name: "Fechadura Eletrônica Digital Intelar Wi-Fi Tuya 5 em 1 com Biometria, Bluetooth, Senha Touch, Chave e Tag",
+                        origin: "BR",
+                        price: "",
+                        category: "Casa e Segurança",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me7zojg4l5oh8e@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/3VeX6B7hZT",
+                        rating: 4.9,
+                        sold: "2mil+"
+                      },
+                      {
+                        id: 99,
+                        name: "Cadeira Gamer Profissional Ergonômica Reclinável para Escritório com Rodinhas e Apoio para Pés",
+                        origin: "BR",
+                        price: "",
+                        category: "Móveis e Escritório",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meh2ygcha0w363@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/1La2WJUeVU",
+                        rating: 4.8,
+                        sold: "8mil+"
+                      },
+                      {
+                        id: 100,
+                        name: "Óculos de Áudio Bluetooth Inteligentes para Esportes ao Ar Livre com Som Surround e Chamadas",
+                        origin: "INT",
+                        price: "",
+                        category: "Eletrônicos e Acessórios",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rd3z-m7uwi4qo25hp4d.webp",
+                        affiliateLink: "https://s.shopee.com.br/2Vlzud8V2j",
+                        rating: 4.9,
+                        sold: "416"
+                      },                                                                                                                                                                       
 ];
