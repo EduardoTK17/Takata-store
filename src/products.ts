@@ -1094,5 +1094,29 @@ export const products: Product[] = [
                         affiliateLink: "https://s.shopee.com.br/2Vlzud8V2j",
                         rating: 4.9,
                         sold: "416"
-                      },                                                                                                                                                                       
+                      },    
+                      {
+                        id: 101,
+                        name: "Escova de Limpeza de Teclado 8 em 1 Multifuncional Portátil para Computador",
+                        origin: "BR",
+                        price: "",
+                        category: "Eletrônicos e Informática",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rffu-m3bogjn72exz86.webp",
+                        affiliateLink: "https://s.shopee.com.br/AABVJI5fRp?share_channel_code=1",
+                        rating: 4.9,
+                        sold: "30mil+"
+                      },
+                      {
+                        id: 102,
+                        name: "Kit com 10 Peças de Pasta para Limpeza Profunda do Nariz com Carvão de Bambu para Cravos e Pontos Negros",
+                        origin: "INT",
+                        price: "",
+                        category: "Beleza e Cuidados Pessoais",
+                        image: "",
+                        affiliateLink: "",
+                        rating: 4.6,
+                        sold: "90mil+"
+                      },
+                      
+                                                                                                                                                                                         
 ];
