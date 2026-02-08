@@ -1117,6 +1117,85 @@ export const products: Product[] = [
                         rating: 4.6,
                         sold: "90mil+"
                       },
+                      {
+                        id: 103,
+                        name: "Fone de Ouvido Bluetooth 5.3 para Capacete de Motocicleta com Chamadas Mãos Livres à Prova D'Água",
+                        origin: "BR",
+                        price: "",
+                        category: "Acessórios Automotivos",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-may7srwp8l8v25.webp",
+                        affiliateLink: "https://s.shopee.com.br/4fqazRHx6Z",
+                        rating: 4.9,
+                        sold: "10mil+"
+                      },
+                      {
+                        id: 104,
+                        name: "Kit Capa de Chuva Pantaneiro Masculina e Feminina para Moto",
+                        origin: "BR",
+                        price: "",
+                        category: "Acessórios Automotivos",
+                        image: "https://down-br.img.susercontent.com/file/br-11134201-7qukw-leq5dzv8566820.webp",
+                        affiliateLink: "https://s.shopee.com.br/9KcQYHfz04",
+                        rating: 4.9,
+                        sold: "240"
+                      },
+                      {
+                        id: 105,
+                        name: "Ventilador de Teto com Luz LED Silencioso Bivolt com Controle Remoto e Instalação Fácil E27",
+                        origin: "BR",
+                        price: "",
+                        category: "Casa e Iluminação",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-7rdxc-mbw853ewhik99c@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/4LDkbjirMC",
+                        rating: 4.8,
+                        sold: "40mil+"
+                      },
+                      {
+                        id: 106,
+                        name: "Conjunto Alfaiataria Social Feminino em Linho com Calça e Blusa",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Feminina",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer87de563gj6d.webp",
+                        affiliateLink: "https://s.shopee.com.br/9KcQZB1lMe",
+                        rating: 4.8,
+                        sold: "80mil+"
+                      },
+                      {
+                        id: 107,
+                        name: "Body Splash Barbour's Beauty Feminino 200ml com Todas as Fragrâncias",
+                        origin: "BR",
+                        price: "",
+                        category: "Beleza e Perfumes",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdpfvko0aqj546.webp",
+                        affiliateLink: "https://s.shopee.com.br/BOBerRrnM",
+                        rating: 4.8,
+                        sold: "7mil+"
+                      },
+                      {
+                        id: 108,
+                        name: "Camisola Feminina Sexy sem Bojo com Costas Abertas e Calcinha Regulável",
+                        origin: "BR",
+                        price: "",
+                        category: "Moda Íntima",
+                        image: "https://down-br.img.susercontent.com/file/1748a32f6d8be56b27994cbeb3121cb3@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/50TRPwZD8s",
+                        rating: 4.9,
+                        sold: "40mil+"
+                      },
+                      {
+                        id: 109,
+                        name: "Esponja Bucha de Silicone com Porta Sabão e Escova para Banho",
+                        origin: "BR",
+                        price: "",
+                        category: "Beleza e Cuidados Pessoais",
+                        image: "https://down-br.img.susercontent.com/file/sg-11134201-824hq-mf3260ltf85n36@resize_w450_nl.webp",
+                        affiliateLink: "https://s.shopee.com.br/6AfOocDB3g",
+                        rating: 4.7,
+                        sold: "20mil+"
+                      },
+                      
+                      
                       
                                                                                                                                                                                          
 ];
