@@ -1194,8 +1194,48 @@ export const products: Product[] = [
                         rating: 4.7,
                         sold: "20mil+"
                       },
-                      
-                      
-                      
-                                                                                                                                                                                         
+                      {
+                        id: 110,
+                        name: "Kit Jogo de Cama Edredom Casal Queen 06 Peças Dupla Face Super Macio Premium Casa Dona",
+                        origin: "BR",
+                        price: "",
+                        category: "Cama, Mesa e Banho",
+                        image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgs0kysigc9187.webp",
+                        affiliateLink: "https://s.shopee.com.br/60MJIMVuQW",
+                        rating: 4.7,
+                        sold: "490"
+                    },
+                    {
+                      id: 111,
+                      name: "Porta Sabão Líquido em Aço Inoxidável Ou Organizador de Talheres Giratorio Organização da Pia",
+                      origin: "BR",
+                      price: "",
+                      category: "Cozinha e Organização",
+                      image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhcetsvuk2kg91.webp",
+                      affiliateLink: "https://s.shopee.com.br/7VB75qyt0b",
+                      rating: 4.9,
+                      sold: "1mil+"
+                  },
+                  {
+                    id: 112,
+                    name: "Climatizador Smart 4 em 1 Resfria Ventila Umidifica e Purifica o Ar 3,5L Elgin",
+                    origin: "BR",
+                    price: "",
+                    category: "Eletrodomésticos e Climatização",
+                    image: "https://down-br.img.susercontent.com/file/sg-11134201-8258o-mfvgoq2oz47e73.webp",
+                    affiliateLink: "https://s.shopee.com.br/156BoAHLt",
+                    rating: 4.8,
+                    sold: "7mil+"
+                },         
+                {
+                  id: 113,
+                  name: "Ventilador luminária 5 folhas grande de Teto com aroma silencioso e economico turbo controle remoto E27 Bivolt 50w",
+                  origin: "BR",
+                  price: "",
+                  category: "Iluminação e Ventilação",
+                  image: "https://down-br.img.susercontent.com/file/sg-11134201-825ay-mgf41gb080eh9d.webp",
+                  affiliateLink: "https://s.shopee.com.br/5fjSwtknnU",
+                  rating: 4.8,
+                  sold: "2mil+"
+              },                                                                                                                                                                      
 ];
