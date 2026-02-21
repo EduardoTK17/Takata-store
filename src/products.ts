@@ -1237,5 +1237,49 @@ export const products: Product[] = [
                   affiliateLink: "https://s.shopee.com.br/5fjSwtknnU",
                   rating: 4.8,
                   sold: "2mil+"
-              },                                                                                                                                                                      
+              },    
+              {
+                id: 114,
+                name: "Arranjo de Orquídea Artificial Com Vaso Barca Luxuoso",
+                origin: "BR",
+                price: "",
+                category: "Decoração e Casa",
+                image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi1l0szppgcicf.webp",
+                affiliateLink: "https://s.shopee.com.br/60MJTdZX0t",
+                rating: 4.6,
+                sold: "10mil+"
+            },       
+            {
+              id: 115,
+              name: "Capa Para Moto Impermeável Proteção Contra Sol e Chuva Anti-Uv Não Risca",
+              origin: "BR",
+              price: "R$28,98",
+              category: "Automotivo e Acessórios",
+              image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9eenrio6yo2e8.webp",
+              affiliateLink: "https://s.shopee.com.br/8pgUrBgjGi",
+              rating: 4.6,
+              sold: "10mil+"
+          },  
+          {
+            id: 116,
+            name: "Luva de Boxe Muay Thai/kickboxing Elite Pretorian + Bandagem Elástica 3,5M Para Treinos Profisionais",
+            origin: "BR",
+            price: "",
+            category: "Esportes e Lazer",
+            image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg41mdbbqbk560.webp",
+            affiliateLink: "https://s.shopee.com.br/1LaTvUgWmr",
+            rating: 4.9,
+            sold: "593"
+        },     
+        {
+          id: 117,
+          name: "KIT 2 Pijamas Americanos Amamentação - Baby Doll Botão Blogueirinha",
+          origin: "BR",
+          price: "",
+          category: "Moda Feminina e Maternidade",
+          image: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwq0ij8otnzz69@resize_w450_nl.webp",
+          affiliateLink: "https://s.shopee.com.br/W1Mw3yo5c",
+          rating: 4.8,
+          sold: "10mil+"
+      },                                                                                                                                                    
 ];
